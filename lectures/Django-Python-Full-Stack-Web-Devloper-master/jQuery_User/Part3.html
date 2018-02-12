@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Connect Four</title>
+    <link rel="stylesheet" href="Part3.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous">
+    </script>
+  </head>
+  <body>
+    <h1>Welcome to Connect Four!</h1>
+    <h2>The object of this game is to connect four of your chips in a row!</h2>
+    <h3>Player One: it is your turn, please pick a column to drop your blue chip.</h3>
+    <table>
+      <tr>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+      </tr>
+      <tr>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+      </tr>
+      <tr>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+      </tr>
+      <tr>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+      </tr>
+      <tr>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+      </tr>
+      <tr>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+        <td><svg height="100" width="100"><circle cx="50" cy="50" r="49" stroke="black" stroke-width="3" fill="gray" /></svg></td>
+      </tr>
+    </table>
+    <script type="text/javascript" src="Part3.js"></script>
+  </body>
+</html>

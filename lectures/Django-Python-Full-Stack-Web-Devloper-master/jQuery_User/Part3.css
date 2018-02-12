@@ -1,0 +1,17 @@
+body{
+  text-align: center;
+  align-content: center;
+}
+
+table{
+  align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.turnBlue{
+  background: blue;
+}
+.turnRed{
+  background: red;
+}
