@@ -1,0 +1,3 @@
+django-admin startproject ProTwo
+python manage.py startapp AppTwo
+python manage.py runserver
