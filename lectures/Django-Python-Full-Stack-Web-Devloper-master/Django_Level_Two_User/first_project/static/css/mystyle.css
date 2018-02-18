@@ -1,0 +1,9 @@
+h1{
+  color: red;
+}
+
+div.djangotwo table,
+div.djangotwo th,
+div.djangotwo td {
+  border: 2px solid black;
+}
