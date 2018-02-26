@@ -20,7 +20,7 @@ class PostListView(ListView):
     model = Post
 
     def get_queryset(self):
-        return Post.objects.firter(published_date__lte=timezone.now()).order_by('-published_date')
+        return Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
 
 
 class PostDetailView(DetailView):
@@ -53,7 +53,7 @@ class DraftListView(LoginRequiredMixin, ListView):
     redirect_field_name = 'blog/post_list.html'
 
     def get_queryset(self):
-        return Post.objects.firter(published_date__isnull=True).order_by('create_date')
+        return Post.objects.filter(published_date__isnull=True).order_by('create_date')
 
 
 @login_required
@@ -74,7 +74,7 @@ def add_comment_to_post(request, pk):
             return redirect("post_detail", pk=post.pk)
     else:
         form = CommentForm()
-    return render(request, 'blog/comment_form.html'{ "form":form })
+    return render(request, 'blog/comment_form.html', { "form":form })
 
 @login_required
 def comment_approve(request, pk):
