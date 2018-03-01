@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
   <head>
     <meta charset="utf-8">
@@ -18,7 +19,7 @@
     <nav class="navbar mynav" role="navigation" id="navbar">
       <div class="container">
         <a class="navbar-brand mynav" href="{% url 'home' %}">Star Social</a>
-        <ul class="navbar navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right">
           {% if user.is_authenticated %}
             <li><a href="#">Post</a></li>
             <li><a href="#">Groups</a></li>
