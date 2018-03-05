@@ -1,7 +1,7 @@
 from django.contrib import admin
 from groups import models
 
-class GroupMemberInline(admin.TabularInLine):
+class GroupMemberInline(admin.TabularInline):
     model = models.GroupMember
 
 

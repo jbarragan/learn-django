@@ -8,7 +8,7 @@ from django.shortcuts import get_object_or_404
 from groups.models import Group, GroupMember
 
 class CreateGroup(LoginRequiredMixin, generic.CreateView):
-    field = ('name', 'description')
+    fields = ('name', 'description')
     model = Group
 
 
@@ -44,7 +44,7 @@ class LeaveGroup(LoginRequiredMixin, generic.RedirectView):
 
     def get(self, request, *args, **kwargs):
         try:
-            membership = models.GroupMember.objects.filter(
+            membership = GroupMember.objects.filter(
                 user=self.request.user,
                 group__slug=self.kwargs.get('slug')
             ).get()
